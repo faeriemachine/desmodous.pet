@@ -7,14 +7,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       # your build step here
-        
+
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-          nekoweb-domain: 'faeriemachine.nekoweb.org'
+          nekoweb-domain: 'desmoduspet.nekoweb.org'
           nekoweb-username: 'tri4ge'
           directory: 'public'
 
